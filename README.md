@@ -10,7 +10,7 @@ A modern full-stack **MERN (MongoDB, Express, React, Node.js)** authentication s
 ## 🌐 Live Demo
 
 - **Frontend:** [https://mern-authentication-frontend-beta.vercel.app](https://mern-authentication-frontend-beta.vercel.app)  
-- **Backend API:** [https://mern-authentication-backend-01mj.onrender.com/api/v1](https://mern-authentication-backend-01mj.onrender.com/api/v1)
+- **Backend API:** [https://mern-authentication-backend-01mj.onrender.com/](https://mern-authentication-backend-01mj.onrender.com/)
 
 ---
 
