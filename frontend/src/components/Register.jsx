@@ -4,6 +4,7 @@ import { Context } from "../main";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import API_URL from "../config";
 
 const Register = () => {
   const {isAuthenticated} = useContext(Context);
@@ -12,7 +13,7 @@ const Register = () => {
 
   const handleRegister = async(data) => {
     data.phone = `+91${data.phone}`;
-    await axios.post("http://localhost:4001/api/v1/user/register", data, {
+    await axios.post(`${API_URL}/user/register`, data, {
       withCredentials: true,
       headers: { "Content-Type": "application/json" },
     }).then((res) => {

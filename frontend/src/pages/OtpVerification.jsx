@@ -4,6 +4,7 @@ import axios from "axios";
 import { Navigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Context } from "../main";
+import API_URL from "../config";
 
 const OtpVerification = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } = useContext(Context);
@@ -46,7 +47,7 @@ const OtpVerification = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:4001/api/v1/user/otp-verification",
+        `${API_URL}/user/otp-verification`,
         { email, phone, otp: enteredOtp },
         {
           withCredentials: true,                                   // important to receive cookies

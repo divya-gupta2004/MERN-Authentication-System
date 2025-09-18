@@ -20,7 +20,7 @@ app.use(
     cors({
     // origin: ["URL", "URl2", "URL3"]           // connecting many frontend in one backend
     // origin: process.env.FRONTEND_URL,
-    origin: "http://localhost:5173", 
+    origin: "http://localhost:5173",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     })
